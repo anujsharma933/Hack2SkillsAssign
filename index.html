@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H2S — Code The Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <div class="nav-logo">H<span>2</span>S</div>
+      <div class="nav-links">
+        <a href="#who">About</a>
+        <a href="#how">How to participate?</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#schedule">Schedules</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#faq">FAQs</a>
+      </div>
+      <button class="btn-signin">Sign In</button>
+      <button
+        class="nav-ham"
+        onclick="document.querySelector('.mob-overlay').classList.add('open')"
+      >
+        ☰
+      </button>
+    </nav>
+
+    <div class="mob-overlay">
+      <button
+        class="mob-close"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+      >
+        ✕
+      </button>
+      <a
+        href="#who"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >About</a
+      >
+      <a
+        href="#how"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >How to participate?</a
+      >
+      <a
+        href="#challenges"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >Challenges</a
+      >
+      <a
+        href="#schedule"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >Schedules</a
+      >
+      <a
+        href="#rewards"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >Rewards</a
+      >
+      <a
+        href="#faq"
+        onclick="
+          document.querySelector('.mob-overlay').classList.remove('open')
+        "
+        >FAQs</a
+      >
+    </div>
+
+    <!-- ═══════════════════════════
+     SECTION 1 · HERO
+═══════════════════════════ -->
+    <section id="hero">
+      <div class="hero-blob"></div>
+      <div class="hero-inner">
+        <div class="char-box">
+          <img
+            src="images/hero-char.png"
+            alt="Futuristic character in purple outfit"
+          />
+        </div>
+
+        <!-- Headline -->
+        <div class="hero-txt">
+          <h1 class="hero-h1">
+            <span class="line1">CODE THE</span>
+            <span class="line2">FUTURE</span>
+          </h1>
+          <p class="hero-tag">Where Innovation Becomes Reality</p>
+        </div>
+      </div>
+
+      <button
+        class="btn-regnow"
+        onclick="
+          document.querySelector('#who').scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Register Now
+      </button>
+      <div
+        class="hero-cue"
+        onclick="
+          document.querySelector('#who').scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        About Hackathon
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 2 · WHO CAN PARTICIPATE
+═══════════════════════════ -->
+    <section id="who">
+      <div class="who-top-bar">About Hackathon</div>
+      <div class="who-inner">
+        <!-- Pixel decorations left -->
+        <div class="px-l" style="top: 50%; transform: translateY(-50%)">
+          <div class="row">
+            <span
+              class="pxb"
+              style="width: 56px; height: 20px; opacity: 0"
+            ></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span
+              class="pxb"
+              style="width: 56px; height: 20px; opacity: 0"
+            ></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 20px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 20px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 20px; height: 20px"></span>
+          </div>
+        </div>
+        <!-- Pixel decorations right -->
+        <div class="px-r" style="top: 50%; transform: translateY(-50%)">
+          <div class="row">
+            <span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span
+            ><span
+              class="pxb"
+              style="width: 20px; height: 20px; opacity: 0"
+            ></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 56px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 20px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 56px; height: 20px"></span
+            ><span class="pxb" style="width: 20px; height: 20px"></span>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span class="pxb" style="width: 20px; height: 20px"></span>
+          </div>
+        </div>
+
+        <h2 class="who-h2">WHO CAN<br />PARTICIPATE?</h2>
+        <p class="who-p">
+          Welcome to the Lorem Ipsum Innovation Hackathon, an exhilarating
+          platform designed to foster innovation and creativity in the domain of
+          advanced technology and futuristic solutions. Organized by the
+          National Center for Applied Research and supported by Hack2skill, this
+          hackathon invites undergraduate students, graduate/postgraduate
+          students, and PhD researchers to collaborate and solve critical
+          challenges.
+        </p>
+        <button class="btn-apply">Apply Now</button>
+
+        <p class="lbl" style="margin-bottom: 22px">WHO CAN PARTICIPATE?</p>
+        <div class="part-grid">
+          <div class="part-card reveal">Undergraduate<br />Students</div>
+          <div class="part-card reveal">
+            Graduate/ Postgraduate<br />Students
+          </div>
+          <div class="part-card reveal">
+            PhD Students/<br />Research Scholars
+          </div>
+        </div>
+        <p class="note-txt">
+          Note: Working Professionals are not eligible to participate in the
+          hackathon.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 3 · WHAT IS THE HACKATHON
+═══════════════════════════ -->
+    <section id="about">
+      <p class="lbl" style="padding: 0 0 56px">WHY PARTICIPATE?</p>
+      <div class="about-grid">
+        <!-- Left: text -->
+        <div class="reveal">
+          <h2 class="about-h2">WHAT IS THE<br />HACKATHON?</h2>
+          <p class="about-p">
+            The Lorem Ipsum Innovation Hackathon is a flagship event crafted to
+            uncover pioneering ideas in science, technology, and system design.
+            As technological advancements accelerate globally, this initiative
+            aims to bridge academic knowledge with practical implementation.
+          </p>
+          <p class="about-p">
+            Participants will work on challenge statements designed by leading
+            R&D units, applying theoretical expertise to build innovative
+            prototypes and solutions with potential real-world application.
+          </p>
+          <p class="timer-lbl">Submission Closing In:</p>
+          <div class="timer-row">
+            <div class="timer-box" id="cd">16d 12h 42m 31s</div>
+            <button class="btn-regw">Register Now</button>
+          </div>
+        </div>
+
+        <div class="collage reveal">
+          <!-- Row 1: two cells -->
+          <div class="cell">
+            <img
+              src="images/collage-laptop.jpg"
+              alt="Person working on laptop"
+            />
+          </div>
+          <div class="cell">
+            <img
+              src="images/collage-globe.jpg"
+              alt="Hand holding glass globe"
+            />
+          </div>
+          <!-- Row 2: wide VR -->
+          <div class="cell wide">
+            <img
+              src="images/collage-vr.jpg"
+              alt="Woman using VR headset"
+              style="object-position: center 20%"
+            />
+          </div>
+          <!-- Row 3: two cells -->
+          <div class="cell">
+            <img
+              src="images/collage-team.jpg"
+              alt="Team brainstorming with sticky notes"
+            />
+          </div>
+          <div class="cell">
+            <img
+              src="images/collage-notes.jpg"
+              alt="Students in audience with notebooks"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 4 · WHY PARTICIPATE
+═══════════════════════════ -->
+    <section id="why">
+      <p class="lbl">WHY PARTICIPATE?</p>
+      <div class="why-grid">
+        <!-- Left items -->
+        <div class="why-col-l">
+          <div class="wi reveal">
+            <div class="wi-row">
+              <span class="wi-title">Mentorship from Experts</span>
+              <div class="wi-bar"></div>
+            </div>
+            <p class="wi-desc">
+              Gain invaluable insights and guidance from experienced
+              technologists and domain experts.
+            </p>
+          </div>
+          <div class="wi reveal">
+            <div class="wi-row">
+              <span class="wi-title">Networking</span>
+              <div class="wi-bar"></div>
+            </div>
+            <p class="wi-desc">
+              Connect with peers, professionals, and innovation leaders from
+              across the nation.
+            </p>
+          </div>
+        </div>
+
+        <div class="astro-wrap">
+          <div class="orbit o1"></div>
+          <div class="orbit o2"></div>
+          <img
+            class="astro-img"
+            src="images/astronaut.png"
+            alt="Floating astronaut in spacesuit"
+          />
+        </div>
+
+        <!-- Right items -->
+        <div class="why-col-r">
+          <div class="wi reveal">
+            <div class="wi-row">
+              <div class="wi-bar"></div>
+              <span class="wi-title">Internship Opportunities</span>
+            </div>
+            <p class="wi-desc">
+              Stand a chance to secure internships at top institutions and
+              innovation labs.
+            </p>
+          </div>
+          <div class="wi reveal">
+            <div class="wi-row">
+              <div class="wi-bar"></div>
+              <span class="wi-title">Real-World Impact</span>
+            </div>
+            <p class="wi-desc">
+              Contribute to meaningful challenges that aim to improve lives and
+              systems at scale.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="lbl" style="margin-top: 80px">HOW TO PARTICIPATE?</p>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 5 · HOW TO PARTICIPATE
+═══════════════════════════ -->
+    <section id="how">
+      <div class="steps">
+        <div class="reveal">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"
+              />
+              <rect x="9" y="3" width="6" height="4" rx="1" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <div class="step-ttl">Register<br />for Hackathon</div>
+          <div class="step-dsc">
+            Sign up now to participate in the hackathon.
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <div class="step-ttl">Form<br />your Teams</div>
+          <div class="step-dsc">
+            Collaborate with like-minded individuals to form teams.
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24">
+              <polygon points="3 11 22 2 13 21 11 13 3 11" />
+            </svg>
+          </div>
+          <div class="step-ttl">Choose<br />a Challenge</div>
+          <div class="step-dsc">
+            Select from the list of challenges provided.
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <div class="step-ttl">Innovate<br />and Develop</div>
+          <div class="step-dsc">
+            Work on your solutions, supported by resources and mentorship.
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <div class="step-ttl">Submit<br />Your Solution</div>
+          <div class="step-dsc">
+            Present your innovative ideas for evaluation.
+          </div>
+        </div>
+      </div>
+      <p class="lbl" style="margin-top: 80px">CHALLENGES</p>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 6 · CHALLENGES
+═══════════════════════════ -->
+    <section id="challenges">
+      <div id="chlist">
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 01</div>
+          <img class="ch-img" src="images/ch01-laptop.jpg" alt="Challenge 01" />
+          <div class="ch-d">
+            Develop an AI-driven solution to dynamically control traffic signals
+            based on live camera feeds and vehicle density.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 02</div>
+          <img
+            class="ch-img"
+            src="images/ch02-vr-bust.jpg"
+            alt="Challenge 02"
+          />
+          <div class="ch-d">
+            Create a web or mobile application that integrates wearable data to
+            provide health insights and medication reminders.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 03</div>
+          <img class="ch-img" src="images/ch03-code.jpg" alt="Challenge 03" />
+          <div class="ch-d">
+            Build an NLP-based tool to scan long legal contracts and output
+            simplified summaries with key clauses and deadlines.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 04</div>
+          <img class="ch-img" src="images/ch11-typing.jpg" alt="Challenge 04" />
+          <div class="ch-d">
+            Design a predictive model using remote sensing data and live
+            hydrology feeds to forecast and alert flood risks in urban zones.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 05</div>
+          <img
+            class="ch-img"
+            src="images/ch05-satellite.jpg"
+            alt="Challenge 05"
+          />
+          <div class="ch-d">
+            Create a decentralized platform that allows institutions to issue
+            and verify digital certificates securely.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 06</div>
+          <img class="ch-img" src="images/ch10-vrgame.jpg" alt="Challenge 06" />
+          <div class="ch-d">
+            Design a prototype that enables prospective students to explore
+            university campuses remotely with immersive visuals.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <!-- Row 07 — static Learn More button as per design -->
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 07</div>
+          <img class="ch-img" src="images/ch06-robot.jpg" alt="Challenge 07" />
+          <div>
+            <div class="ch-d">
+              Build a machine-learning system that classifies waste into
+              biodegradable, recyclable, and hazardous categories using a live
+              camera feed.
+            </div>
+            <button class="ch-lm" onclick="event.stopPropagation()">
+              Learn More
+            </button>
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 08</div>
+          <img class="ch-img" src="images/ch04-aimap.png" alt="Challenge 08" />
+          <div class="ch-d">
+            Develop a communication app that uses peer-to-peer protocols or SMS
+            fallback to function in areas with limited internet.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 09</div>
+          <img class="ch-img" src="images/ch08-coding.jpg" alt="Challenge 09" />
+          <div class="ch-d">
+            Build an AI-driven app that uses computer vision to translate ISL
+            gestures into text and speech in multiple Indian languages.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 10</div>
+          <img
+            class="ch-img"
+            src="images/ch09-robhand.jpg"
+            alt="Challenge 10"
+          />
+          <div class="ch-d">
+            Design a conversational assistant trained to provide mental health
+            first aid and connect users to professionals during crises.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 11</div>
+          <img
+            class="ch-img"
+            src="images/ch02-vr-bust.jpg"
+            alt="Challenge 11"
+          />
+          <div class="ch-d">
+            Build a pipeline that processes aerial imagery to detect crop
+            diseases and recommend corrective actions.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+
+        <div class="ch-row" onclick="xpand(this)">
+          <div class="ch-n">[ 12</div>
+          <img class="ch-img" src="images/ch07-globe.jpg" alt="Challenge 12" />
+          <div class="ch-d">
+            Create a mobile assistant that helps visually impaired users
+            navigate unfamiliar environments using spatial audio cues.
+          </div>
+          <div class="ch-arr">↗</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 7 · SCHEDULE
+═══════════════════════════ -->
+    <section id="schedule">
+      <h2 class="sched-ttl">HACKATHON SCHEDULE</h2>
+      <div class="sched-track">
+        <div class="si reveal">
+          <div class="si-ttl act">Registrations and Idea Submission Open</div>
+          <div class="si-bar act"></div>
+          <div class="si-date">Thu, Jul 04, 2025</div>
+        </div>
+        <div class="si reveal">
+          <div class="si-ttl">
+            Introductory and Problem Statement Explainer Session
+          </div>
+          <div class="si-bar"></div>
+          <div class="si-date">Thu, Jul 08, 2025</div>
+        </div>
+        <div class="si reveal">
+          <div class="si-ttl">Mentor-Mentee Connects – Begins</div>
+          <div class="si-bar"></div>
+          <div class="si-date">Thu, Jul 08, 2025</div>
+        </div>
+        <div class="si reveal">
+          <div class="si-ttl">Mentor-Mentee Connects – Ends</div>
+          <div class="si-bar"></div>
+          <div class="si-date">Tue, Jul 16, 2025</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 8 · REWARDS
+═══════════════════════════ -->
+    <section id="rewards">
+      <p class="lbl" style="margin-bottom: 32px">REWARDS AND BENEFITS</p>
+      <div class="rew-grid">
+        <div class="rew-card reveal">
+          <h4>Mentorship from Experts</h4>
+          <p>
+            Work under the guidance of domain professionals and technology
+            mentors.
+          </p>
+        </div>
+        <div class="rew-card reveal">
+          <h4>Recognition and Internship Opportunities</h4>
+          <p>
+            Outstanding performers may receive offers for internships or
+            collaboration opportunities.
+          </p>
+        </div>
+        <div class="rew-card reveal">
+          <h4>Certificates of Achievement</h4>
+          <p>
+            All participants who complete the hackathon receive certificates
+            recognizing their contribution.
+          </p>
+        </div>
+        <div class="rew-card reveal">
+          <h4>Networking Access</h4>
+          <p>
+            Connect with peers, professionals, and leaders from top institutions
+            across the nation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+     SECTION 9 · FAQ
+═══════════════════════════ -->
+    <section id="faq">
+      <h2 class="faq-ttl">FREQUENTLY ASKED QUESTION</h2>
+      <div class="faq-list">
+        <div class="faq-row reveal">
+          <div class="faq-num">01</div>
+          <div class="faq-q active">Who can participate in the hackathon?</div>
+          <div class="faq-a">
+            Undergraduate, Graduate/Postgraduate, and PhD students currently
+            enrolled in an Indian institution.
+          </div>
+        </div>
+        <div class="faq-row reveal">
+          <div class="faq-num p">02</div>
+          <div class="faq-q pt">What should be the ideal team size?</div>
+          <div class="faq-a">
+            Each team must consist of 3 to 4 members, possibly from different
+            colleges/universities.
+          </div>
+        </div>
+        <div class="faq-row reveal">
+          <div class="faq-num">03</div>
+          <div class="faq-q">What is the cost of participating?</div>
+          <div class="faq-a">
+            Participation is entirely free. No registration or submission fee is
+            required.
+          </div>
+        </div>
+        <div class="faq-row reveal">
+          <div class="faq-num p">04</div>
+          <div class="faq-q pt">Can a recent graduate participate?</div>
+          <div class="faq-a">
+            Only current students from the 2024–25 academic year are eligible.
+          </div>
+        </div>
+        <div class="faq-row reveal">
+          <div class="faq-num">05</div>
+          <div class="faq-q">What happens after submission?</div>
+          <div class="faq-a">
+            Submissions will be reviewed by expert panels and shortlisted teams
+            will be invited for further evaluation rounds.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot-inner">
+        <div class="foot-logo">H<span>2</span>S</div>
+        <div class="foot-links">
+          <a href="#who">About</a>
+          <a href="#how">How to Participate</a>
+          <a href="#challenges">Challenges</a>
+          <a href="#schedule">Schedules</a>
+          <a href="#rewards">Rewards</a>
+          <a href="#faq">FAQs</a>
+        </div>
+        <div class="foot-copy">© 2025 H2S Hackathon. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
